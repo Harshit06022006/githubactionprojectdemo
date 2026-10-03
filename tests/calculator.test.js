@@ -1,5 +1,6 @@
 const {
     add,
+    mod,
     subtract,
     multiply,
     divide
@@ -19,6 +20,9 @@ test("multiplication", () => {
 
 test("division", () => {
     expect(divide(10, 5)).toBe(2);
+});
+test("mod", () => {
+    expect(mod(10, 5)).toBe(0);
 });
 
 test("division by zero", () => {
